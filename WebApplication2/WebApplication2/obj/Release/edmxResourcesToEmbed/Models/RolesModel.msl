@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ReportServerModelStoreContainer" CdmEntityContainer="ReportServerEntities">
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="ReportServerModel.Role">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="TaskMask" ColumnName="TaskMask" />
+          <ScalarProperty Name="RoleFlags" ColumnName="RoleFlags" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="CreateRole" FunctionName="ReportServerModel.Store.CreateRole" />
+    <FunctionImportMapping FunctionImportName="DeleteRole" FunctionName="ReportServerModel.Store.DeleteRole" />
+  </EntityContainerMapping>
+</Mapping>
